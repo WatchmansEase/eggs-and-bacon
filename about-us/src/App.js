@@ -15,11 +15,11 @@ function App() {
           </p>
         </div>
         <div class="team-members">
-          <h3>Team Member</h3>
-          <p>Favourite hobby or activity you like to do (e.g., for downtime)</p>
+          <h3>Hey, I'm Elaine</h3>
+          <p>🔥I enjoy doing pyrography🔥 </p>
           <p>
-            Favourite hobby or activity you like to do (e.g., for downtime) Why
-            do you do it? Why do you enjoy it?
+            My favourite projects so far have been creating Christmas Eve boxes which I 
+              have made for my daughters and as gifts for friends and family. 
           </p>
         </div>
         <div class="team-members">
