@@ -23,11 +23,11 @@ function App() {
           </p>
         </div>
         <div class="team-members">
-          <h3>Team Member</h3>
-          <p>Favourite hobby or activity you like to do (e.g., for downtime)</p>
+          <h3>Hi, I'm Cat</h3>
+          <p>I have a lot of energy so I like to run around and do yoga to bring myself down to most folks level of normal.</p>
           <p>
-            Favourite hobby or activity you like to do (e.g., for downtime) Why
-            do you do it? Why do you enjoy it?
+            At the weekend these days, you'll find me at the Palestine protests shouting for a ceasefire.
+            In my downtime, I like to zone out by painting, taking pictures and walking round exhibitions.
           </p>
         </div>
         <div class="team-members">
