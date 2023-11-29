@@ -31,11 +31,10 @@ function App() {
           </p>
         </div>
         <div class="team-members">
-          <h3>Team Member</h3>
-          <p>Favourite hobby or activity you like to do (e.g., for downtime)</p>
+          <h3>Heey, I'm Gemma</h3>
+          <p>My favourite hobby is stained glass art!</p>
           <p>
-            Favourite hobby or activity you like to do (e.g., for downtime) Why
-            do you do it? Why do you enjoy it?
+            I spend aaaaalot of time in front of a screen so I like to do something creative that doesn't involve tech. It's very peaceful and I like the "I made that" feeling you get at the end... even if I'm terrible at it 😂
           </p>
         </div>
       </header>
