@@ -40,7 +40,7 @@ function QuizScreen() {
 
   return (
     <div className="quiz-screen">
-      <h2>Quiz Screen</h2>
+      <h1>Quiz Screen</h1>
       {currentQuestion && (
         <div>
           <h3>{currentQuestion.text}</h3>
@@ -53,10 +53,16 @@ function QuizScreen() {
               </li>
             ))}
           </ul>
-          <button className="submit-button" onClick={handleNextQuestion}>Next Question</button>
         </div>
       )}
-      <ResetButton />
+      <container className="row">
+        <container className="column">
+          <button className="submit-button" onClick={handleNextQuestion}>Next Question</button>
+        </container>
+        <container className="column">
+          <ResetButton />
+        </container>
+      </container>
       <p>Current Score: {score}</p>
     </div>
   );

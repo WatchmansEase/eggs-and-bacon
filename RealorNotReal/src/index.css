@@ -209,3 +209,9 @@ h1 {
   font-size: 1.8em;
 }
 
+/* MOVE TO CSS FOR QUIZ PAGE */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
