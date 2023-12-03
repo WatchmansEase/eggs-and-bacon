@@ -200,7 +200,7 @@ button {
 ul.answers {
   list-style-type: none;
   padding: 0;
-  margin: 3rem 0 2rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 /* Heading styles */
@@ -221,6 +221,7 @@ h1 {
   font-family: "neulis-neue", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
+  margin: -1.5rem;
 }
 
 .question {
