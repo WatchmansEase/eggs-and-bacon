@@ -156,9 +156,24 @@ button {
   color: var(--white);
 }
 
+.equal-button {
+  width: 30vw;
+}
+
+/* Answer box styles */
+.answer {
+  background-color: var(--white);
+}
+
 /* Heading styles */
 h1 {
   font-family: neulis-cursive;
   font-size: 3em;
+}
+
+.tagline {
+  font-family: neulis-sans;
+  font-weight: medium;
+  font-size: 1.8em;
 }
 
