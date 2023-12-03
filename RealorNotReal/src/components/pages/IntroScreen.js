@@ -7,6 +7,7 @@ function IntroScreen() {
   //Navigation screen for user to choose to play quiz or game
   return (
     <div className="intro-menu">
+      
       <h1>Information</h1>
       <button className="accent-button" onClick={() => navigate("/quiz")}>Take the knowledge quiz</button>
       <button onClick={() => navigate("/game")}>Play Real or No Real</button>

@@ -101,16 +101,18 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   --white: #fff1e6;
   --black: #141414;
   background-color: var(--red);
-  min-height: 100vh;
 }
 
 
 body {
-  margin: 0;
+  margin: 10em 5em;
   font-family: "neulis-sans";
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--white);
+  height: 100vh;
+  vertical-align: center;
 }
 
 /* Standard button styles */
