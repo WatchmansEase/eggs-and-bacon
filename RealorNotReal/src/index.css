@@ -196,6 +196,11 @@ button {
     transform: translateY(-2px);
     background-color: var(--light-lilac);
   }
+
+  &:active, &:focus {
+    background-color: var(--blue);
+    color: var(--white);
+}
 }
 
 ul.answers {
@@ -244,7 +249,7 @@ h1 {
   }
 
   #question {
-    margin: -1rem;
+    margin: 0 15% -1rem 15%;
   }
 
   .question {
