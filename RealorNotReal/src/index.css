@@ -113,7 +113,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
   text-align: center;
-  height: 100vh;
 }
 
 /* Dark text on lighter background color */
@@ -187,6 +186,11 @@ button {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
   }
+}
+
+ul.answers {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Heading styles */
