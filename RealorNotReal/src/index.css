@@ -222,6 +222,12 @@ h1 {
   font-size: 2rem;
 }
 
+.update {
+  font-family: "neulis-cursive", sans-serif;
+  font-weight: bold;
+  font-size: 10rem;
+}
+
 /* Question styles */
 #question {
   font-family: "neulis-neue", sans-serif;
@@ -265,6 +271,10 @@ h1 {
   .button {
     display: block;
     width: 100%;
+  }
+
+  .update {
+    font-size: 8rem;
   }
   
 }

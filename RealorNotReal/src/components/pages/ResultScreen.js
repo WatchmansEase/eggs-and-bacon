@@ -10,10 +10,16 @@ function ResultScreen() {
   //Result screen to display user quiz score and ask if they want to continue playing
   return (
     <div className="result-screen">
-      <h2>Result Screen</h2>
-      <p>Final Score: {score}</p>
-      <button onClick={() => navigate("/game")}>Play Game</button>
-      <ResetButton />
+      <p className="tagline">You scored:</p>
+      <p className="update">{score}0%</p>
+      <container className="row">
+        <container className="column">
+          <ResetButton />
+        </container>
+        <container className="column">
+        <button className="submit-button" onClick={() => navigate("/game")}>Play Real or No Real</button>
+        </container>
+      </container>
     </div>
   );
 }

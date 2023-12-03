@@ -43,7 +43,7 @@ function QuizScreen() {
       {currentQuestion && (
         <div>
           {/* Needs to making interactive with JS */}
-          <p id="question">Question {currentQuestionIndex +1} of 10 • Your current score is {score}</p>
+          <p id="question">Question {currentQuestionIndex +1} of 10 • Your current score is {score}0%</p>
           <h1 className="question">{currentQuestion.text}</h1>
           <ul className="answers">
             {currentQuestion.options.map((option) => (
