@@ -144,3 +144,13 @@ button {
     transform: translateY(-5px);
   }
 }
+
+.back-button {
+  background-color: var(--lilac);
+}
+
+.accent-button {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
