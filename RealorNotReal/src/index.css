@@ -109,7 +109,7 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 
 /* General body styles */
 body {
-  margin: 10em 5em;
+  margin: 15%;
   font-family: "neulis-sans";
   font-size: 20px;
   line-height: 1.5em;
@@ -117,6 +117,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
   text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
 }
 
 /* Dark text on lighter background color */
@@ -129,8 +136,8 @@ button {
   /* font */
   font-family: "neulis-cursive", sans-serif;
   font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: -0.02em;
+  font-size: 1.3rem;
+  letter-spacing: -0.01rem;
   text-transform: uppercase;
   /* background and layout */
   background-color: var(--green);
@@ -138,7 +145,6 @@ button {
   border-radius: 2em;
   display: inline-block;
   padding: 15px 30px;
-  margin: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   /* hover effect using webkit for rendering across browsers */
   -webkit-transform: perspective(1px) translateZ(0);
@@ -182,9 +188,8 @@ button {
   text-transform: none;
   font-family: "neulis-sans",sans-serif;
   font-weight: normal;
-  font-size: 1.1em;
   text-align: left;
-  margin: 0.75em;
+  margin: 1rem;
 
   &:hover {
     -webkit-transform: translateY(-2px);
@@ -201,24 +206,26 @@ ul.answers {
 /* Heading styles */
 h1 {
   font-family: "neulis-cursive", sans-serif;
-  font-size: 3em;
+  font-size: 4rem;
+  line-height: 1.2em;
 }
 
 .tagline {
   font-family: "neulis-neue", sans-serif;
   font-weight: medium;
-  font-size: 1.8em;
+  font-size: 2rem;
+}
+
+/* Question styles */
+#question {
+  font-family: "neulis-neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .question {
   font-family: "neulis-neue", sans-serif;
   font-weight: bold;
-  font-size: 2em;
-}
-
-/* MOVE TO CSS FOR QUIZ PAGE */
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 3rem;
+  padding: 0 10% 0 10%;
 }
