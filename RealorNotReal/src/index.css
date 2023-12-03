@@ -108,6 +108,7 @@ body {
   margin: 10em 5em;
   font-family: "neulis-sans";
   font-size: 20px;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
@@ -163,6 +164,19 @@ button {
 /* Answer box styles */
 .answer {
   background-color: var(--white);
+  display: block;
+  width: 100%;
+  text-transform: none;
+  font-family: neulis-sans;
+  font-weight: normal;
+  font-size: 1.1em;
+  text-align: left;
+  margin: 0.75em;
+
+  &:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
 }
 
 /* Heading styles */

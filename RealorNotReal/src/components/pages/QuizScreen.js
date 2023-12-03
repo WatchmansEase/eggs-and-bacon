@@ -47,7 +47,7 @@ function QuizScreen() {
           <ul>
             {currentQuestion.options.map((option) => (
               <li key={option.id}>
-                <button onClick={() => handleAnswerSelection(option.isCorrect)}>
+                <button className="answer" onClick={() => handleAnswerSelection(option.isCorrect)}>
                   {option.text}
                 </button>
               </li>
