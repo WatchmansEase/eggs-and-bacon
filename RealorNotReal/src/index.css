@@ -237,6 +237,7 @@ h1 {
   padding: 0 10% 0 10%;
 }
 
+/* Responsive design */
 @media (max-width:640px)  {
   /* phones */
   body {
