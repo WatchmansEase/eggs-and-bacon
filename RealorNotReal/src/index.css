@@ -101,6 +101,10 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   --white: #fff1e6;
   --black: #141414;
   background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* General body styles */
