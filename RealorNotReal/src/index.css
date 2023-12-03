@@ -155,12 +155,11 @@ button {
 
 .back-button {
   background-color: var(--lilac);
-  align-self: flex-start;
+  display: inline;
 }
 
 .submit-button {
-  background-color: var(--lilac);
-  align-self: flex-end;
+  display: inline;
 }
 
 .accent-button {

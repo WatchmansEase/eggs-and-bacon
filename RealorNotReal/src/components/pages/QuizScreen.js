@@ -53,11 +53,11 @@ function QuizScreen() {
               </li>
             ))}
           </ul>
-          <button onClick={handleNextQuestion}>Next Question</button>
+          <button className="submit-button" onClick={handleNextQuestion}>Next Question</button>
         </div>
       )}
-      <p>Current Score: {score}</p>
       <ResetButton />
+      <p>Current Score: {score}</p>
     </div>
   );
 }
