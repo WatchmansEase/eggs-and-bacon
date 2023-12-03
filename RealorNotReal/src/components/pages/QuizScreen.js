@@ -40,10 +40,11 @@ function QuizScreen() {
 
   return (
     <div className="quiz-screen">
-      <h1>Quiz Screen</h1>
+      {/* Needs to making interactive with JS */}
+      <p>Question 1 of 10 • Your current score is {score}</p>
       {currentQuestion && (
         <div>
-          <h3>{currentQuestion.text}</h3>
+          <h1 className="question">{currentQuestion.text}</h1>
           <ul className="answers">
             {currentQuestion.options.map((option) => (
               <li key={option.id}>
@@ -57,13 +58,12 @@ function QuizScreen() {
       )}
       <container className="row">
         <container className="column">
-          <button className="submit-button" onClick={handleNextQuestion}>Next Question</button>
-        </container>
-        <container className="column">
           <ResetButton />
         </container>
+        <container className="column">
+        <button className="submit-button" onClick={handleNextQuestion}>Next Question</button>
+        </container>
       </container>
-      <p>Current Score: {score}</p>
     </div>
   );
 }

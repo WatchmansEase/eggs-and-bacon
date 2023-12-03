@@ -195,6 +195,7 @@ button {
 ul.answers {
   list-style-type: none;
   padding: 0;
+  margin: 3rem 0 2rem 0;
 }
 
 /* Heading styles */
@@ -207,6 +208,12 @@ h1 {
   font-family: neulis-sans;
   font-weight: medium;
   font-size: 1.8em;
+}
+
+.question {
+  font-family: neulis-sans;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 /* MOVE TO CSS FOR QUIZ PAGE */
