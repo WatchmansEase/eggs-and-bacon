@@ -1,10 +1,3 @@
-body {
-  margin: 0;
-  font-family: "neulis-sans";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /*
  * Adding webfonts that match our branding
  *
@@ -96,4 +89,26 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 .tk-neulis-cursive-hairline { font-family: "neulis-cursive-hairline",sans-serif; }
 .tk-neulis-cursive { font-family: "neulis-cursive",sans-serif; }
 .tk-neulis-sans { font-family: "neulis-sans",sans-serif; }
+
+
+/* Creating variable styles that can be used throughout our CSS */
+:root {
+  --red: #ff5414;
+  --blue: #537ec0;
+  --green: #deff56;
+  --lilac: #dfc1dc;
+  --light-lilac: #ebdae1;
+  --white: #fff1e6;
+  --black: #141414;
+  background-color: var(--red);
+  min-height: 100vh;
+}
+
+
+body {
+  margin: 0;
+  font-family: "neulis-sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
