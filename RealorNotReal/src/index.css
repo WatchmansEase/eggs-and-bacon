@@ -27,18 +27,6 @@
 @import url("https://p.typekit.net/p.css?s=1&k=hyq1qyt&ht=tk&f=53776.53777.53783.53785.53787.53788.53799.53801.53805.53811&a=15875027&app=typekit&e=css");
 
 @font-face {
-font-family:"neulis-cursive-hairline";
-src:url("https://use.typekit.net/af/b1b48f/00000000000000007750b26b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff2"),url("https://use.typekit.net/af/b1b48f/00000000000000007750b26b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff"),url("https://use.typekit.net/af/b1b48f/00000000000000007750b26b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("opentype");
-font-display:auto;font-style:italic;font-weight:100;font-stretch:normal;
-}
-
-@font-face {
-font-family:"neulis-cursive-hairline";
-src:url("https://use.typekit.net/af/d68b64/00000000000000007750b270/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),url("https://use.typekit.net/af/d68b64/00000000000000007750b270/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),url("https://use.typekit.net/af/d68b64/00000000000000007750b270/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:100;font-stretch:normal;
-}
-
-@font-face {
 font-family:"neulis-cursive";
 src:url("https://use.typekit.net/af/052fdd/00000000000000007750b26a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/052fdd/00000000000000007750b26a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/052fdd/00000000000000007750b26a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
@@ -86,9 +74,21 @@ src:url("https://use.typekit.net/af/dde81e/00000000000000007750b29a/30/l?primer=
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 
-.tk-neulis-cursive-hairline { font-family: "neulis-cursive-hairline",sans-serif; }
+@font-face {
+  font-family:"neulis-neue";
+  src:url("https://use.typekit.net/af/522184/00000000000000007750b28a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/522184/00000000000000007750b28a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/522184/00000000000000007750b28a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+  font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+  }
+  
+  @font-face {
+  font-family:"neulis-neue";
+  src:url("https://use.typekit.net/af/b889f4/00000000000000007750b282/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/b889f4/00000000000000007750b282/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/b889f4/00000000000000007750b282/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+  }
+  
 .tk-neulis-cursive { font-family: "neulis-cursive",sans-serif; }
 .tk-neulis-sans { font-family: "neulis-sans",sans-serif; }
+.tk-neulis-neue { font-family: "neulis-neue",sans-serif; }
 
 
 /* Creating variable styles that can be used throughout our CSS */
@@ -127,7 +127,7 @@ body {
 /* Standard button styles */
 button {
   /* font */
-  font-family: "neulis-cursive";
+  font-family: "neulis-cursive", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: -0.02em;
@@ -180,7 +180,7 @@ button {
   display: block;
   width: 100%;
   text-transform: none;
-  font-family: neulis-sans;
+  font-family: "neulis-sans",sans-serif;
   font-weight: normal;
   font-size: 1.1em;
   text-align: left;
@@ -200,18 +200,18 @@ ul.answers {
 
 /* Heading styles */
 h1 {
-  font-family: neulis-cursive;
+  font-family: "neulis-cursive", sans-serif;
   font-size: 3em;
 }
 
 .tagline {
-  font-family: neulis-sans;
+  font-family: "neulis-neue", sans-serif;
   font-weight: medium;
   font-size: 1.8em;
 }
 
 .question {
-  font-family: neulis-sans;
+  font-family: "neulis-neue", sans-serif;
   font-weight: bold;
   font-size: 2em;
 }
