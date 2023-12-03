@@ -115,17 +115,32 @@ body {
 
 /* Standard button styles */
 button {
+  /* font */
   font-family: "neulis-cursive";
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  /* background and layout */
   background-color: var(--green);
   border: none;
   border-radius: 2em;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 15px 30px;
   margin: 10px;
-  transition-duration: 0.4s ease-in-out;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* hover effect using webkit for rendering across browsers */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
