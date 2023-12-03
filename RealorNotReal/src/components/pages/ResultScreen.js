@@ -11,7 +11,7 @@ function ResultScreen() {
   return (
     <div className="result-screen">
       <p className="tagline">You scored:</p>
-      <p className="update">{score}0%</p>
+      <p className="update">{score}%</p>
       <container className="row">
         <container className="column">
           <ResetButton />

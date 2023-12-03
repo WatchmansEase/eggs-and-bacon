@@ -29,7 +29,7 @@ function QuizScreen() {
     if (currentQuestionIndex < Questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       if (currentOption === true) {
-        dispatch(changeScore(score + 1));
+        dispatch(changeScore(score + 10));
       }
       setCurrentOption(null); // Reset selected option after each question
     } else {
@@ -43,7 +43,7 @@ function QuizScreen() {
       {currentQuestion && (
         <div>
           {/* Needs to making interactive with JS */}
-          <p id="question">Question {currentQuestionIndex +1} of 10 • Your current score is {score}0%</p>
+          <p id="question">Question {currentQuestionIndex +1} of 10 • Your current score is {score}%</p>
           <h1 className="question">{currentQuestion.text}</h1>
           <ul className="answers">
             {currentQuestion.options.map((option) => (
