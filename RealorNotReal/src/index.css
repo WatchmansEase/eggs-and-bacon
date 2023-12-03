@@ -1,8 +1,207 @@
+/*
+ * Adding webfonts that match our branding
+ *
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * neulis-cursive:
+ *   - http://typekit.com/eulas/00000000000000007750b26a
+ *   - http://typekit.com/eulas/00000000000000007750b26c
+ *   - http://typekit.com/eulas/00000000000000007750b26f
+ *   - http://typekit.com/eulas/00000000000000007750b271
+ * neulis-cursive-hairline:
+ *   - http://typekit.com/eulas/00000000000000007750b26b
+ *   - http://typekit.com/eulas/00000000000000007750b270
+ * neulis-sans:
+ *   - http://typekit.com/eulas/00000000000000007750b292
+ *   - http://typekit.com/eulas/00000000000000007750b293
+ *   - http://typekit.com/eulas/00000000000000007750b298
+ *   - http://typekit.com/eulas/00000000000000007750b29a
+ *
+ * © 2009-2023 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2023-11-29 00:22:20 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=hyq1qyt&ht=tk&f=53776.53777.53783.53785.53787.53788.53799.53801.53805.53811&a=15875027&app=typekit&e=css");
+
+@font-face {
+font-family:"neulis-cursive-hairline";
+src:url("https://use.typekit.net/af/b1b48f/00000000000000007750b26b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff2"),url("https://use.typekit.net/af/b1b48f/00000000000000007750b26b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff"),url("https://use.typekit.net/af/b1b48f/00000000000000007750b26b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:100;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-cursive-hairline";
+src:url("https://use.typekit.net/af/d68b64/00000000000000007750b270/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),url("https://use.typekit.net/af/d68b64/00000000000000007750b270/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),url("https://use.typekit.net/af/d68b64/00000000000000007750b270/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:100;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-cursive";
+src:url("https://use.typekit.net/af/052fdd/00000000000000007750b26a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/052fdd/00000000000000007750b26a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/052fdd/00000000000000007750b26a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-cursive";
+src:url("https://use.typekit.net/af/6ffe18/00000000000000007750b26c/30/l?subset_id=2&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/6ffe18/00000000000000007750b26c/30/d?subset_id=2&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/6ffe18/00000000000000007750b26c/30/a?subset_id=2&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-cursive";
+src:url("https://use.typekit.net/af/c07427/00000000000000007750b26f/30/l?subset_id=2&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/c07427/00000000000000007750b26f/30/d?subset_id=2&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/c07427/00000000000000007750b26f/30/a?subset_id=2&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-cursive";
+src:url("https://use.typekit.net/af/b83381/00000000000000007750b271/30/l?subset_id=2&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/b83381/00000000000000007750b271/30/d?subset_id=2&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/b83381/00000000000000007750b271/30/a?subset_id=2&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-sans";
+src:url("https://use.typekit.net/af/a2bc6e/00000000000000007750b292/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/a2bc6e/00000000000000007750b292/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/a2bc6e/00000000000000007750b292/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-sans";
+src:url("https://use.typekit.net/af/c9d71f/00000000000000007750b293/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/c9d71f/00000000000000007750b293/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/c9d71f/00000000000000007750b293/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-sans";
+src:url("https://use.typekit.net/af/194129/00000000000000007750b298/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/194129/00000000000000007750b298/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/194129/00000000000000007750b298/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neulis-sans";
+src:url("https://use.typekit.net/af/dde81e/00000000000000007750b29a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/dde81e/00000000000000007750b29a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/dde81e/00000000000000007750b29a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-neulis-cursive-hairline { font-family: "neulis-cursive-hairline",sans-serif; }
+.tk-neulis-cursive { font-family: "neulis-cursive",sans-serif; }
+.tk-neulis-sans { font-family: "neulis-sans",sans-serif; }
+
+
+/* Creating variable styles that can be used throughout our CSS */
+:root {
+  --red: #ff5414;
+  --blue: #537ec0;
+  --green: #deff56;
+  --lilac: #dfc1dc;
+  --light-lilac: #ebdae1;
+  --white: #fff1e6;
+  --black: #141414;
+  background-color: var(--red);
+}
+
+/* General body styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 10em 5em;
+  font-family: "neulis-sans";
+  font-size: 20px;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--white);
+  text-align: center;
 }
+
+/* Dark text on lighter background color */
+.dark-body {
+  color: var(--black);
+}
+
+/* Standard button styles */
+button {
+  /* font */
+  font-family: "neulis-cursive";
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  /* background and layout */
+  background-color: var(--green);
+  border: none;
+  border-radius: 2em;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* hover effect using webkit for rendering across browsers */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.back-button {
+  background-color: var(--lilac);
+  display: inline;
+}
+
+.submit-button {
+  display: inline;
+}
+
+.accent-button {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.equal-button {
+  width: 30vw;
+}
+
+/* Answer box styles */
+.answer {
+  background-color: var(--white);
+  display: block;
+  width: 100%;
+  text-transform: none;
+  font-family: neulis-sans;
+  font-weight: normal;
+  font-size: 1.1em;
+  text-align: left;
+  margin: 0.75em;
+
+  &:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+
+ul.answers {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Heading styles */
+h1 {
+  font-family: neulis-cursive;
+  font-size: 3em;
+}
+
+.tagline {
+  font-family: neulis-sans;
+  font-weight: medium;
+  font-size: 1.8em;
+}
+

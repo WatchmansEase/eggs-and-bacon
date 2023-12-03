@@ -44,20 +44,20 @@ function QuizScreen() {
       {currentQuestion && (
         <div>
           <h3>{currentQuestion.text}</h3>
-          <ul>
+          <ul className="answers">
             {currentQuestion.options.map((option) => (
               <li key={option.id}>
-                <button onClick={() => handleAnswerSelection(option.isCorrect)}>
+                <button className="answer" onClick={() => handleAnswerSelection(option.isCorrect)}>
                   {option.text}
                 </button>
               </li>
             ))}
           </ul>
-          <button onClick={handleNextQuestion}>Next Question</button>
+          <button className="submit-button" onClick={handleNextQuestion}>Next Question</button>
         </div>
       )}
-      <p>Current Score: {score}</p>
       <ResetButton />
+      <p>Current Score: {score}</p>
     </div>
   );
 }

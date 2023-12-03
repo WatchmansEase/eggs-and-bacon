@@ -9,7 +9,7 @@ function ResultScreen() {
   const dispatch = useDispatch();
 
   return (
-      <button onClick={() => dispatch(resetGame(navigate(screen)))}>Start Again</button>
+      <button className="back-button" onClick={() => dispatch(resetGame(navigate(screen)))}>Start Again</button>
   );
 }
 
