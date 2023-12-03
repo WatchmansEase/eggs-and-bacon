@@ -111,8 +111,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
+  text-align: center;
   height: 100vh;
-  vertical-align: center;
 }
 
 /* Standard button styles */
@@ -154,5 +154,11 @@ button {
 .accent-button {
   background-color: var(--blue);
   color: var(--white);
+}
+
+/* Heading styles */
+h1 {
+  font-family: neulis-cursive;
+  font-size: 3em;
 }
 
