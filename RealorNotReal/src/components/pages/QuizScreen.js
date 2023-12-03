@@ -40,10 +40,10 @@ function QuizScreen() {
 
   return (
     <div className="quiz-screen">
-      {/* Needs to making interactive with JS */}
-      <p id="question">Question 1 of 10 • Your current score is {score}</p>
       {currentQuestion && (
-        <div >
+        <div>
+          {/* Needs to making interactive with JS */}
+          <p id="question">Question 1 of 10 • Your current score is {score}</p>
           <h1 className="question">{currentQuestion.text}</h1>
           <ul className="answers">
             {currentQuestion.options.map((option) => (
