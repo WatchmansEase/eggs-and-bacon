@@ -8,8 +8,8 @@ function IntroScreen() {
   return (
     <div className="intro-menu">
       <h1>Information</h1>
-      <button onClick={() => navigate("/quiz")}>Play Quiz</button>
-      <button onClick={() => navigate("/game")}>Play Real or Not Real</button>
+      <button className="accent-button" onClick={() => navigate("/quiz")}>Take the knowledge quiz</button>
+      <button onClick={() => navigate("/game")}>Play Real or No Real</button>
     </div>
   );
 }
