@@ -7,11 +7,24 @@ function IntroScreen() {
   //Navigation screen for user to choose to play quiz or game
   return (
     <div className="intro-menu">
-      <h1>Information</h1>
-      <button onClick={() => navigate("/quiz")}>Play Quiz</button>
-      <button onClick={() => navigate("/game")}>Play Real or Not Real</button>
+<<<<<<< HEAD
+      <img className="logo" src="/real-or-no-real-logo_white.svg" alt="Real or No Real" />
+=======
+      <img className="logo" src="./RealorNotReal/src/components/images/real-or-no-real-logo_white.png" alt="Real or No Real"></img>
+>>>>>>> a2a0e0616817eb7c6b0f2ae70c16cef3f24666bc
+      <h1 className="tagline">Can <i>you</i> spot a deep fake?</h1>
+      <container className="row">
+        <container className="column">
+          <button className="accent-button equal-button" onClick={() => navigate("/quiz")}>Take the knowledge quiz</button>
+        </container>
+        <container className="column">
+          <button className="equal-button" onClick={() => navigate("/game")}>Play Real or No Real</button>
+        </container>
+      </container>
     </div>
   );
 }
 
 export default IntroScreen;
+
+

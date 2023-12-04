@@ -29,7 +29,7 @@ function QuizScreen() {
     if (currentQuestionIndex < Questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       if (currentOption === true) {
-        dispatch(changeScore(score + 1));
+        dispatch(changeScore(score + 10));
       }
       setCurrentOption(null); // Reset selected option after each question
     } else {
@@ -40,24 +40,30 @@ function QuizScreen() {
 
   return (
     <div className="quiz-screen">
-      <h2>Quiz Screen</h2>
       {currentQuestion && (
         <div>
-          <h3>{currentQuestion.text}</h3>
-          <ul>
+          {/* Needs to making interactive with JS */}
+          <p id="question">Question {currentQuestionIndex +1} of 10 • Your current score is {score}%</p>
+          <h1 className="question">{currentQuestion.text}</h1>
+          <ul className="answers">
             {currentQuestion.options.map((option) => (
               <li key={option.id}>
-                <button onClick={() => handleAnswerSelection(option.isCorrect)}>
+                <button className="answer" onClick={() => handleAnswerSelection(option.isCorrect)}>
                   {option.text}
                 </button>
               </li>
             ))}
           </ul>
-          <button onClick={handleNextQuestion}>Next Question</button>
         </div>
       )}
-      <p>Current Score: {score}</p>
-      <ResetButton />
+      <container className="row">
+        <container className="column">
+          <ResetButton />
+        </container>
+        <container className="column">
+        <button className="submit-button" onClick={handleNextQuestion}>Next Question</button>
+        </container>
+      </container>
     </div>
   );
 }
