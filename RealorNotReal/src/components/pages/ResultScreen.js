@@ -5,7 +5,7 @@ import ResetButton from "../buttons/ResetButton";
 
 function ResultScreen() {
   const navigate = useNavigate();
-  const score = useSelector((state) => state.score); 
+  const score = useSelector((state) => state.quiz.score); 
   
   //Result screen to display user quiz score and ask if they want to continue playing
   return (
