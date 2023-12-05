@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import ResetButton from "../buttons/ResetButton";
 
 function EndScreen() {
-    const score = useSelector((state) => state.score); // Accessing score from Redux store
+    const score = useSelector((state) => state.quiz.score); // Accessing score from Redux store
     
     return (
         <div>
