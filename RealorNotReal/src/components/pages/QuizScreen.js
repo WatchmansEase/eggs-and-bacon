@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeScore } from "../../Redux/actions";
+import { changeScore } from "../../Redux/quizSlice";
 import Questions from "../../Data/Questions";
 import { useNavigate } from "react-router-dom";
 import ResetButton from "../buttons/ResetButton";
@@ -10,7 +10,7 @@ function QuizScreen() {
   const [currentOption, setCurrentOption] = useState(null); //State to keep selected
   const navigate = useNavigate(); // Navigate to different routes in the app
   const dispatch = useDispatch(); //Dispatch action to update state in Redux store
-  const score = useSelector((state) => state.score); // Accessing score from Redux store
+  const score = useSelector((state) => state.quiz.score); // Accessing score from Redux store
   const currentQuestion = Questions[currentQuestionIndex];
 
   // Store selected answer by user

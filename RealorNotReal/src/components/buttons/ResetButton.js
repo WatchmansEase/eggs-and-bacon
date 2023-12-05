@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function ResultScreen() {
   const navigate = useNavigate(); 
-  const screen = useSelector((state) => state.screen);
+  const screen = useSelector((state) => state.quiz.screen);
   const dispatch = useDispatch();
 
   return (
