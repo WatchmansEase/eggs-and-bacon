@@ -5,6 +5,7 @@ import QuizScreen from './components/pages/QuizScreen';
 import GameScreen from './components/pages/GameScreen';
 import ResultScreen from './components/pages/ResultScreen';
 import EndScreen from './components/pages/EndScreen';
+import DeepFakeDetectorScreen from './components/pages/DeepFakeDetectorScreen';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/quiz" element={<QuizScreen />}></Route>
           <Route path="/game" element={<GameScreen />}></Route>
           <Route path="/result" element={<ResultScreen />}></Route>
+          <Route path="/result" element={<DeepFakeDetectorScreen/>}></Route>
           <Route path="/end" element={<EndScreen />}></Route>
       </Routes>
   );
