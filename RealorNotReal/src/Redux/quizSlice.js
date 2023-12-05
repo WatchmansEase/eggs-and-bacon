@@ -14,7 +14,7 @@ export const quizSlice = createSlice({
     },
     resetGame: (state, action) => {
       state.score = 0;
-      state.screen = action.payload;
+      state.screen = "/intro";
     },
   },
 });
