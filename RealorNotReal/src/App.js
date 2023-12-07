@@ -13,12 +13,13 @@ function App() {
   return (
       <Routes>
           <Route path="/" element={<LoginAppScreen />}></Route> {/* Route for the login page */}
+          <Route path="/login" element={<LoginAppScreen />}></Route>
           <Route path="/intro" element={<IntroScreen />}></Route>
           <Route path="/quiz" element={<QuizScreen />}></Route>
           <Route path="/game" element={<GameScreen />}></Route>
           <Route path="/result" element={<ResultScreen />}></Route>
-          <Route path="/result" element={<DeepFakeDetectorScreen/>}></Route>
-          <Route path="/result" element={<ForFakesSakeScreen/>}></Route>
+          <Route path="/api" element={<DeepFakeDetectorScreen/>}></Route>
+          <Route path="/api2" element={<ForFakesSakeScreen/>}></Route>
           <Route path="/end" element={<EndScreen />}></Route>
       </Routes>
   );

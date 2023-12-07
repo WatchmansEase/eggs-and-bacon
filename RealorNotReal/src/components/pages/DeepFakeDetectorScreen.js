@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { queryWithFile } from './huggingface-api.js'; // Import the API function
+import { queryWithFile } from '../../DeepFakeApi/huggingface-api'; // Import the API function
 
 function DeepFakeDetector() {
   const [result, setResult] = useState(null);

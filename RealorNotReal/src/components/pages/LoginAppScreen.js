@@ -1,16 +1,16 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function LoginAppScreen() {
-  const history = useHistory();
-  const [loggedIn, setLoggedIn] = React.useState(false); // Set initial login state
+  const navigate = useNavigate();
+  const [loggedIn, setLoggedIn] = useState(false); // Set initial login state
 
   const handleLogout = () => {
     setLoggedIn(false);
   };
 
   const redirectToIntroScreen = () => {
-    history.push('/introScreen'); // Redirects to the 'IntroScreen' route
+    navigate('/introScreen'); // Redirects to the 'IntroScreen' route
   };
 
   // Function to handle successful login
@@ -39,7 +39,7 @@ function LoginAppScreen() {
         <div>
           <h1>Login Page</h1>
           <form onSubmit={handleLogin}>
-            {/* Login form here */}
+            {/* Login form */}
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
             <button type="submit">Login</button>

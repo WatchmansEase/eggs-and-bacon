@@ -5,6 +5,7 @@ import Questions from "../../Data/Questions";
 import { useNavigate } from "react-router-dom";
 import ResetButton from "../buttons/ResetButton";
 
+
 function QuizScreen() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); // State to keep track of current question
   const [currentOption, setCurrentOption] = useState(null); //State to keep selected
