@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ForFakesSake from "../../ForFakesSake";
+import ForFakesSake from "../../DeepFakeApi/ForFakesSake";
 
 function ForFakesSakeScreen() {
     const navigate = useNavigate();
@@ -15,3 +15,5 @@ function ForFakesSakeScreen() {
         </div>
     )
 }
+
+export default ForFakesSakeScreen
