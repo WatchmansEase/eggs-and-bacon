@@ -10,7 +10,7 @@ function LoginAppScreen() {
   };
 
   const redirectToIntroScreen = () => {
-    navigate('/introScreen'); // Redirects to the 'IntroScreen' route
+    navigate('/intro'); // Redirects to the 'IntroScreen' route
   };
 
   // Function to handle successful login
