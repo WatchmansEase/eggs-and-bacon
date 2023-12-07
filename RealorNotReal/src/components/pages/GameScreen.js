@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import imageData from "../../Data/imagesData";
+import imageData from "../../appData/imagesData";
 import { changeScore } from "../../Redux/quizSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -19,6 +19,10 @@ function GameScreen() {
 
   // Function to navigate to next image
   const nextImage = () => {
+    if (selectedAnswer === null) {
+      alert("Please select an option before proceeding!");
+      return;
+    }
     if (currentImageIndex + 1 < imageData.length) {
       setCurrentImageIndex(currentImageIndex + 1);
     } else {
