@@ -1,36 +1,39 @@
-import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { loginSuccess, logout } from '../../Redux/Login/logInSlice'; 
+import { useNavigate } from 'react-router-dom';
+
 
 function LoginAppScreen() {
   const navigate = useNavigate();
-  const [loggedIn, setLoggedIn] = useState(false); // Set initial login state
+  const screen = useSelector((state) => state.quiz.screen);
+  const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
+  const dispatch = useDispatch();
 
   const handleLogout = () => {
-    setLoggedIn(false);
+    dispatch(logout());
   };
 
   const redirectToIntroScreen = () => {
-    navigate('/intro'); // Redirects to the 'IntroScreen' route
+    dispatch(loginSuccess(navigate(screen)));
   };
 
-  // Function to handle successful login
   const handleLogin = () => {
     // Logic for checking successful login (e.g., comparing credentials)
     // For demonstration purposes, hardcoded login check
-    const isValidUser = true; // Replace this with your login validation logic
+    const isValidUser = true;
 
     if (isValidUser) {
-      setLoggedIn(true); // Update login state to true
-      redirectToIntroScreen(); // Redirect to IntroScreen upon successful login
+      redirectToIntroScreen();
     } else {
+      console.log('Login unsuccessful.');
       // Handle unsuccessful login
-      console.log('Login unsuccessful. If at first you do not suceed, try, try again!'); // Display an error message or handle differently
     }
   };
 
   return (
     <div>
-      {loggedIn ? (
+      {isLoggedIn ? (
         <div>
           <h1>Welcome to the Intro Screen!</h1>
           <button onClick={handleLogout}>Log Out</button>
