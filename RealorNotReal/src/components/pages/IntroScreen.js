@@ -17,6 +17,9 @@ function IntroScreen() {
         <container className="column">
           <button className="equal-button" onClick={() => navigate("/game")}>Play Real or No Real</button>
         </container>
+        <container className="column">
+          <button className="equal-button" onClick={() => navigate("/api2")}>Use Our Deep Fake Detector</button>
+        </container>
       </container>
     </div>
   );

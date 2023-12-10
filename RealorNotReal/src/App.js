@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from './components/Navigation';
 import { Routes, Route } from 'react-router-dom';
 import LoginAppScreen from './components/pages/LoginAppScreen';
 import IntroScreen from './components/pages/IntroScreen';
@@ -11,17 +12,21 @@ import ForFakesSakeScreen from './components/pages/ForFakesSakeScreen';
 
 function App() {
   return (
+    <div>
+      <Navigation /> {/* Include the Navigation component */}
       <Routes>
-          <Route path="/" element={<LoginAppScreen />}></Route> {/* Route for the login page */}
-          <Route path="/login" element={<LoginAppScreen />}></Route>
-          <Route path="/intro" element={<IntroScreen />}></Route>
-          <Route path="/quiz" element={<QuizScreen />}></Route>
-          <Route path="/game" element={<GameScreen />}></Route>
-          <Route path="/result" element={<ResultScreen />}></Route>
-          <Route path="/api" element={<DeepFakeDetectorScreen/>}></Route>
-          <Route path="/api2" element={<ForFakesSakeScreen/>}></Route>
-          <Route path="/end" element={<EndScreen />}></Route>
+        {/* Define your routes */}
+        <Route path="/" element={<LoginAppScreen />} />
+        <Route path="/login" element={<LoginAppScreen />} />
+        <Route path="/intro" element={<IntroScreen />} />
+        <Route path="/quiz" element={<QuizScreen />} />
+        <Route path="/game" element={<GameScreen />} />
+        <Route path="/result" element={<ResultScreen />} />
+        <Route path="/api" element={<DeepFakeDetectorScreen />} />
+        <Route path="/api2" element={<ForFakesSakeScreen />} />
+        <Route path="/end" element={<EndScreen />} />
       </Routes>
+    </div>
   );
 }
 
