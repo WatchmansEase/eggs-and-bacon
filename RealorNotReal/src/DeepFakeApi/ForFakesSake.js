@@ -1,10 +1,10 @@
 function ForFakesSake(props){
     return (
-        <iframe
+        <iframe title='Use-Our-Deep-Fake-Detector'
             src="https://sumsub-sumsub-ffs-demo.hf.space"
             frameborder="0"
-            width="850"
-            height="450"
+            width="1000"
+            height="1500"
         ></iframe>
     )
  }
