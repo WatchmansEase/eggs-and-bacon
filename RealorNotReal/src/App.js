@@ -10,6 +10,8 @@ import EndScreen from './components/pages/EndScreen';
 import DeepFakeDetectorScreen from './components/pages/DeepFakeDetectorScreen';
 import ForFakesSakeScreen from './components/pages/ForFakesSakeScreen';
 
+import RegisterScreen from './components/pages/RegisterScreen';
+
 function App() {
   return (
     <div>
@@ -17,6 +19,7 @@ function App() {
       <Routes>
         {/* Define your routes */}
         <Route path="/" element={<LoginAppScreen />} />
+        <Route path="/register" element={<RegisterScreen />} />
         <Route path="/login" element={<LoginAppScreen />} />
         <Route path="/intro" element={<IntroScreen />} />
         <Route path="/quiz" element={<QuizScreen />} />
