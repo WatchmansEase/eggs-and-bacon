@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { resetGame } from "../../Redux/quizSlice";
+import { resetGame } from "../../Redux/Quiz/quizSlice";
 import { useNavigate } from "react-router-dom";
 
 function ResultScreen() {

@@ -1,20 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { setRegister } from '../../Redux/Register/registerSlice';
 
-function Listings() {
-  const [listings, setListings] = useState([]);
+function RegisterScreen() {
+  const listings = useSelector((state) => state.register.listings);
+  const dispatch = useDispatch();
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
 
-  const fetchListings = () => {
-    fetch('http://localhost:5000/api/listings')
-      .then(response => response.json())
-      .then(data => setListings(data))
-      .catch(error => console.error('Error fetching listings:', error));
+  const fetchListings = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/api/listings');
+      if (response.ok) {
+        const data = await response.json();
+        dispatch(setRegister(data));
+      } else {
+        console.error('Error fetching listings');
+      }
+    } catch (error) {
+      console.error('Error fetching listings:', error);
+    }
   };
 
   useEffect(() => {
     fetchListings();
-  }, []);
+  }, [dispatch]);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -67,4 +77,4 @@ function Listings() {
   );
 }
 
-export default Listings;
+export default RegisterScreen;

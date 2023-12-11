@@ -1,0 +1,18 @@
+
+
+- Start mongodb server:
+My Path(yours may differ):
+ C:\Users\user\CFG-full-stack-group-1-final-project\RealorNotReal\src\db> node dbConnection.js
+
+//Navigate to db folder and enter command:
+node dbConnection.js
+
+- check messages if it is connected, this should appear:
+Server running on port 5000
+Connected to MongoDB
+
+ Orthewise check error messages 
+ modulo missing may mean something is not installed/was deleted by accident
+ Error connection:
+ - check name of database and collections is correct
+ - check if connection link is correct

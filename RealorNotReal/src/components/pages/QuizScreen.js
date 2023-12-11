@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeScore } from "../../Redux/quizSlice";
+import { changeScore } from "../../Redux/Quiz/quizSlice";
 import Questions from "../../appData/Questions";
 import { useNavigate } from "react-router-dom";
 import ResetButton from "../buttons/ResetButton";

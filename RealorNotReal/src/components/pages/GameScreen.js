@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import imageData from "../../appData/imagesData";
-import { changeScore } from "../../Redux/quizSlice";
+import { changeScore } from "../../Redux/Quiz/quizSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 function GameScreen() {
