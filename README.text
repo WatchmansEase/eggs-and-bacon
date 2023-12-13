@@ -1,0 +1,42 @@
+
+
+
+Steps to get this project up and running.
+
+
+1. UPDATE LATEST NPM PACKAGES
+run - npm i
+
+2. 
+Start Express Server 
+- open a new terminal
+- cd /navigate to  the db folder
+    Example:
+    ~/user/CFG-full-stack-group-1-final-project/src/db
+- run command
+    node dbConnection.js
+- If success, text should display
+    Server running on port 5000
+    Connected to MongoDB
+- If fail, ask Catherine to add your IP Address to the MongoDB settings
+
+3. 
+Start React App
+- open another new termianl
+- cd/naviagtre to top folder
+    Example:
+    ~/user/CFG-full-stack-group-1-final-project/
+- run command
+    npm start
+- Now access localhost:3000
+
+
+DEBUGGING:
+Mostly all of the time, the answer is infront of you!
+If package is missing, install it!
+
+Eg. Missing package ("cors")
+- npm i cors
+
+Google is your best friend, use it - prefix your query with stackoverflow.
+Eg. Stackoverflow Node server change port blablabla

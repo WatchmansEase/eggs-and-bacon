@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useContext } from "react"; // Adding React
 import AuthContext from "../../context/AuthProvider";
 
 import axios from "../../api/axios";
-const LOGIN_URL = "/auth";
+const LOGIN_URL = "/api/auth";
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext); // When successful login, setAuth state in global context
@@ -26,13 +26,13 @@ const Login = () => {
   }, [user, pwd]);
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default havior of the page, which is to reload upon submit
+    e.preventDefault(); // Prevent default behavior of the page, which is to reload upon submit
 
     try {
-      debugger; // Remove when you want to use
+      // debugger; // Remove when you want to use
       const response = await axios.post(
         LOGIN_URL,
-        JSON.stringify({ user, pwd }),
+        JSON.stringify({ name: user, password: pwd }),
         {
           headers: { "Content-Type": "application/json" },
           withCredentials: true,
@@ -54,8 +54,6 @@ const Login = () => {
         setErrMsg("Missing Username or Password");
       } else if (error.response?.status === 401) {
         setErrMsg("Unauthorized");
-      } else if (error.response?.status === 404) {
-        setErrMsg("Error 404 - CHANGE ME MOVING FORWARD");
       } else {
         setErrMsg("Login Failed");
       }
@@ -70,7 +68,7 @@ const Login = () => {
           {" "}
           <h1> You are logged in!</h1> <br />{" "}
           <p>
-            <a href="#">Go to Home</a>
+            <a href="/intro">Go to Home</a>
           </p>
         </section>
       ) : (
